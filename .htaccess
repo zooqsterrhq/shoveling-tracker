@@ -1,0 +1,16 @@
+# mod_rewrite
+RewriteEngine on
+
+# does not apply to existing directories (if a folder exists on the server with the same name as the rewritten url then it doesn't change anything / give any error and won't run the rule. ex. there is a startup folder but you're trying to change /startup.html to /startup, it won't give an error)
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+# check for corresponding file in directory with .html extension
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Showing the page that has the .html extesnion 
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# ALL OF THE CODE ABOVE IS BASICALLY FOR ERROR HANDLING + ALSO REWRITES THE URL
+
+# 404 Page Code
+ErrorDocument 404 /404.html

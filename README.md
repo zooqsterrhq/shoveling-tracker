@@ -1,3 +1,3 @@
 # shoveling tracker
-an app so my contract shoveling clients can track their shoveling subscription
-live app link: marzooqa.ca/trackmyshovels
+an app so my contract shoveling clients can track their shoveling subscription <br>
+live app link: https://marzooqa.ca/trackmyshovels

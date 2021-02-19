@@ -144,8 +144,8 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  margin-top: -75px;
+  margin-left: -90px;
 }
 
 @-webkit-keyframes appear {
